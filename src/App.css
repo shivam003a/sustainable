@@ -1,38 +1,254 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* for the navbar page */
+.navbar{
+  width: 100%;
+  height: 70px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 2%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+.navbar h1{
+  color: #f5e72e;
+  font-size: 28px;
+  text-transform: uppercase;
+  border: 2px solid #f5e72e;
+  padding: 4px 6px;
+}
+.navbar a{
+  background-color: #f5e72e;
+  color: #000000;
+  text-decoration: none;
+  padding: 2px 6px;
+  font-size: 28px;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* for the home section */
+.home{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+.home::before{
+  content: '';
+  background-image: url('./assets/home-bg.webp');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-attachment: fixed;
+  z-index: -2;
+  opacity: .8;
+}
+.home h1{
+  font-size: 40px;
+  position: absolute;
+  color: white;
+}
+.home p{
+  font-size: 22px;
+  position: absolute;
+  color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5e72e;
+  color: #000000;
+  position: absolute;
+  padding: 8px 12px;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 2;
+}
+.overlay-1{
+  top: 20%;
+  left: -13%;
+}
+.overlay-2{
+  top: 40%;
+  left: -13%;
+}
+.overlay-3{
+  top: 65%;
+  left: -13%;
+}
+.overlay-4{
+  top: 85%;
+  left: -13%;
+}
+
+
+
+/* for the products Page */
+.products{
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 36px 4% 0 4%;
+  overflow: hidden;
+  gap: 24px;
+  background-color: #000000;
+  position: relative;
+}
+.products h1{
+  position: absolute;
+  top: 36px;
+  font-size: 36px;
+  color: #f5e72e;
+}
+.products p{
+  color: #f5e72e;
 }
 
-.App-link {
-  color: #61dafb;
+.product-item{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-ind{
+  background-color: white;
+  padding: 2px;
+}
+.product-ind p{
+  padding: 12px;
+  color: black;
+  text-align: center;
+}
+.products img{
+  width: 100%;
+}
+
+
+
+
+/* for the why Page */
+.why{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 10%;
+  gap: 18px;
+  line-height: 1.6;
+}
+.why::before{
+  content: '';
+  background-image: url('./assets/why-bg.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.why h1{
+  font-size: 36px;
+  position: absolute;
+  top: 36px;
+}
+.why p{
+  font-size: 19px;
+  font-weight: 400;
+  background-color :#f5e72e;
+  padding: 8px 12px;
+}
+
+
+
+
+
+/* for the contact Page */
+.contact{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  background-color: #000000;
+  color: #f5e72e;
+  gap: 24px;
+  position: relative;
+}
+.contact h1{
+  position: absolute;
+  top: 36px;
+  font-size: 36px;
+}
+.contact-sub-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.contact-desc{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 22px;
+  line-height: 1.8;
+  font-size: 17px;
+}
+.contact-form{
+  width: 50%;
+}
+.contact-form form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  /* padding: 8px 5%; */
+}
+.contact-form input{
+  width: 60%;
+  padding: 6px;
+}
+.contact-form textarea{
+  width: 60%;
+  height: 140px;
+}
+.contact-form button{
+  width: 60%;
+  padding: 6px;
 }
