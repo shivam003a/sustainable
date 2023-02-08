@@ -34,6 +34,8 @@ const Products = () => {
         <>
             <section className="products">
                 <h1>The Sustainable Kit</h1>
+                <p>The Sustainable Kit is the perfect solution for those looking to live a more eco-friendly lifestyle. It includes five essential products that will simplify your daily routine while reducing waste. From a reusable water bottle to a set of cloth napkins, every item in the kit has been carefully selected to make a positive impact on the environment.</p>
+                <p>Each product is made with high-quality, environmentally conscious materials and designed to last. Whether you're a university student or a professional, The Sustainable Kit is the perfect way to take small steps towards a more sustainable future. Discover the full collection on our website and see how easy it can be to make a difference.</p>
                 <div className="product-item">
                     <div className="product-ind p1">
                         <img src={p1} alt="img-1" />
@@ -53,7 +55,7 @@ const Products = () => {
                     </div>
                     <div className="product-ind p5">
                         <img src={p5} alt="img-5" />
-                        <p>Plant Based Reusable Containers</p>
+                        <p>Reusable Containers</p>
                     </div>
                 </div>
             </section>
