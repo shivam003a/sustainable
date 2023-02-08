@@ -262,8 +262,8 @@
 }
 
 .txt {
-  /* transform: translateX(-100vw);
-  transition: transform 0.5s linear; */
+  transform: translateX(-100vw);
+  transition: transform 0.5s linear;
 }
 
 @media only screen and (max-width : 700px) {
@@ -286,7 +286,7 @@
   padding: 36px 4% 36px 4%;
   background-color: #000000;
   color: #f5e72e;
-  gap: 24px;
+  gap: 36px;
   position: relative;
   overflow: hidden;
 }
@@ -313,14 +313,14 @@
   gap: 22px;
   line-height: 1.8;
   font-size: 17px;
-  /* transform: translateX(-100vw);
-  transition: transform 0.5s linear; */
+  transform: translateX(-100vw);
+  transition: transform 0.5s linear;
 }
 
 .contact-form {
   width: 50%;
-  /* transform: translateX(100vw);
-  transition: transform 0.5s linear; */
+  transform: translateX(100vw);
+  transition: transform 0.5s linear;
 }
 
 .contact-form form {
