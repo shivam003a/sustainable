@@ -61,23 +61,28 @@
   z-index: -2;
   opacity: .8;
 }
+.home div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f5e72e;
+  padding: 8px 12px;
+}
 .home h1{
   font-size: 40px;
-  position: absolute;
-  color: white;
 }
 .home p{
   font-size: 22px;
-  position: absolute;
-  color: white;
 }
 
 .overlay{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5e72e;
-  color: #000000;
+  background-color: #000000;
+  color: #f5e72e;
   position: absolute;
   padding: 8px 12px;
   font-size: 20px;
@@ -137,8 +142,8 @@
 }
 
 .product-ind{
-  background-color: white;
-  padding: 2px;
+  /* background-color: white; */
+  /* padding: 2px; */
 }
 .product-ind p{
   padding: 12px;
