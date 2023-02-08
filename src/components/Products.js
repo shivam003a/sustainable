@@ -15,7 +15,7 @@ const Products = () => {
 
             element.forEach((e) => {
                 const rect = e.getBoundingClientRect();
-                const viewportHeight = window.innerHeight /5 *4;
+                const viewportHeight = window.innerHeight;
                 setIsVisible(rect.top < viewportHeight);
                 console.log(rect.top < viewportHeight)
             })

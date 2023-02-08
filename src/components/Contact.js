@@ -5,7 +5,7 @@ const Contact = () => {
 
     const handleContact = ()=>{
         const cText = document.querySelectorAll('.c-text');
-        const toglePoint = window.innerHeight /5 * 3;
+        const toglePoint = window.innerHeight;
         cText.forEach((c)=>{
             const cTop = c.getBoundingClientRect().top;
             setFormVisible(cTop < toglePoint);

@@ -5,7 +5,7 @@ const Why = ()=>{
 
     const handleTextAnimate = ()=>{
         const text = document.querySelectorAll('.txt')
-        const toggle = window.innerHeight /5 *4;
+        const toggle = window.innerHeight;
 
         text.forEach((cont)=>{
             const top = cont.getBoundingClientRect().top;
