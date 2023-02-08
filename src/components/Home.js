@@ -6,7 +6,6 @@ const Home = () => {
 
     const handleScroll = () => {
         setOffset(window.scrollY);
-        console.log(offset);
     }
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
@@ -20,8 +19,8 @@ const Home = () => {
                 <span className="overlay overlay-3" style={{ left: (1.9 * offset - 200) + "px" }}>nature friendly</span>
                 <span className="overlay overlay-4" style={{ left: (3 * offset - 200) + "px" }}>reusable</span>
                 <div style={{ top: (parseInt(height / 2.4) + 0.5 * offset) + "px" }}>
-                    <h1 style={{ top: (parseInt(height / 2.4) + 0.5 * offset) + "px" }}>Elevate Your Lifestyle with Sustainable Kit</h1>
-                    <p style={{ top: (parseInt(height / 1.98) + 0.5 * offset) + "px" }}>A collection of eco-friendly products that simplify your daily routine</p>
+                    <h1>Elevate Your Lifestyle with Sustainable Kit</h1>
+                    <p>A collection of eco-friendly products that simplify your daily routine</p>
                 </div>
             </section>
         </>
