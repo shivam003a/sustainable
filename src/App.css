@@ -215,6 +215,9 @@
   .products {
     height: unset;
   }
+  .product-item{
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
 }
 
 
