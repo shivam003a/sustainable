@@ -137,7 +137,7 @@
 /* for the products Page */
 .products {
   width: 100%;
-  height: 110vh;
+  /* height: 110vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,8 +150,6 @@
 }
 
 .products h1 {
-  /* position: absolute; */
-  /* top: 36px; */
   font-size: 36px;
   color: #f5e72e;
 }
@@ -182,8 +180,8 @@
 .product-ind {
   background-color: white;
   padding: 2px;
-  /* transform: translateX(-100vw);
-  transition: transform 0.5s linear; */
+  transform: translateX(-100vw);
+  transition: transform 0.5s linear;
 }
 
 .product-ind p {

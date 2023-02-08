@@ -2,8 +2,8 @@ import { useEffect } from "react";
 
 const Why = ()=>{
 
-    const text = document.querySelectorAll('.txt')
     const handleTextAnimate = ()=>{
+        const text = document.querySelectorAll('.txt')
         const toggle = window.innerHeight /5 *4;
 
         text.forEach((cont)=>{
