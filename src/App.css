@@ -73,7 +73,7 @@
   flex-direction: column;
   position: absolute;
   /* background-color: #f5e72e; */
-  color: white;
+  color: #000000;
   padding: 8px 12px;
 }
 
@@ -138,7 +138,7 @@
 /* for the products Page */
 .products {
   width: 100%;
-  /* height: 110vh; */
+  min-height: 110vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,11 +180,170 @@
 }
 
 .product-ind {
-  background-color: white;
-  padding: 2px;
   transform: translateX(-100vw);
   transition: transform 0.5s linear;
+  position: relative;
 }
+
+
+
+.p1::after {
+  content: 'Plant Based Reusable Cups';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  background-color: white;
+}
+
+.p1:hover::before {
+  content: 'Enjoy your morning coffee on the go without creating waste. The Sustainable Kit includes a reusable coffee cup that is perfect for coffee lovers';
+  position: absolute;
+  /* padding: 2px; */
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  background-color: white;
+}
+
+.p2::after {
+  content: 'Sustainability Starter Kit';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  background-color: white;
+}
+
+.p2:hover::before {
+  content: 'The Sustainable Kit is a carefully curated collection of 5 essential products designed to simplify your daily routine while promoting sustainability';
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  background-color: white;
+}
+
+.p3::after {
+  content: 'Reusable Bamboo Straws';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  background-color: white;
+}
+
+.p3:hover::before {
+  content: 'Ditch disposable plastic utensils and embrace the convenience of bamboo utensils that are durable and biodegradable';
+  position: absolute;
+  top: 0;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  background-color: white;
+}
+
+.p4::after {
+  content: 'Bamboo Toothbrush (set of 2)';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  background-color: white;
+}
+
+.p4:hover::before {
+  content: 'Ditch disposable plastic utensils and embrace the convenience of bamboo utensils that are durable and biodegradable';
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  background-color: white;
+}
+
+.p5::after {
+  content: 'Reusable Containers';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  background-color: white;
+}
+
+.p5:hover::before {
+  content: 'Ditch disposable plastic utensils and embrace the convenience of bamboo utensils that are durable and biodegradable';
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .product-ind p {
   padding: 12px;
@@ -216,7 +375,8 @@
   .products {
     height: unset;
   }
-  .product-item{
+
+  .product-item {
     grid-template-columns: repeat(2, minmax(150px, 1fr));
   }
 }
@@ -268,6 +428,14 @@
   transition: transform 0.5s linear;
 }
 
+.txt-2 {
+  transition-delay: 100ms;
+}
+
+.txt-3 {
+  transition-delay: 200ms;
+}
+
 @media only screen and (max-width : 700px) {
   .why {
     height: unset;
@@ -287,7 +455,7 @@
   justify-content: center;
   padding: 36px 4% 36px 4%;
   background-color: #000000;
-  color: #f5e72e;
+  color: white;
   gap: 36px;
   position: relative;
   overflow: hidden;
@@ -297,6 +465,7 @@
   /* position: absolute; */
   /* top: 36px; */
   font-size: 36px;
+  color: #f5e72e;
 }
 
 .contact-sub-div {

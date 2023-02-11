@@ -34,23 +34,18 @@ const Products = () => {
                 <div className="product-item">
                     <div className={isVisible ? "product-ind p1 animate" : "product-ind p1"}>
                         <img src={p1} alt="img-1" />
-                        <p>Plant Based Reusable Cups</p>
                     </div>
                     <div className={isVisible ? "product-ind p2 animate" : "product-ind p2"}>
                         <img src={p2} alt="img-2" />
-                        <p>Sustainability Starter Kit</p>
                     </div>
                     <div className={isVisible ? "product-ind p3 animate" : "product-ind p3"}>
                         <img src={p3} alt="img-3" />
-                        <p>Reusable Bamboo Straws</p>
                     </div>
                     <div className={isVisible ? "product-ind p4 animate" : "product-ind p4"}>
                         <img src={p4} alt="img-4" />
-                        <p>Bamboo Toothbrush (set of 2)</p>
                     </div>
                     <div className={isVisible ? "product-ind p5 animate" : "product-ind p5"}>
                         <img src={p5} alt="img-5" />
-                        <p>Reusable Containers</p>
                     </div>
                 </div>
             </section>
